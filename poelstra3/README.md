@@ -1,5 +1,8 @@
 This tree shows an example of having two 'native' Typescript packages, that both use a different version of the same non-TS package.
 
+To make the example even more interesting, both 'wrapped' (`declare module "..." { }`) and unwrapped typings are used.
+In `myotherlib`, `myutils` is still unwrapped, but Bluebird and node were added as wrapped examples (directly taken from DefinitelyTyped).
+
 This version was copied from `poelstra2`, with the following changes:
 * `myutils` was changed to look like a 'plain' JS package, without TS code nor typings
 * `mylib` and `myotherlib` both include typings for their version of `myutils`, which differ

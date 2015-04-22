@@ -1,5 +1,8 @@
 This tree shows an almost fully working example of having a mix of native and non-Typescript packages.
 
+To make the example even more interesting, both 'wrapped' (`declare module "..." { }`) and unwrapped typings are used.
+In `myotherlib`, `myutils` is still unwrapped, but Bluebird and node were added as wrapped examples (directly taken from DefinitelyTyped).
+
 It is a direct copy of `poelstra3`, and is a proof-of-concept of how external module resolution would work if
 https://github.com/Microsoft/TypeScript/issues/2338 and https://github.com/Microsoft/TypeScript/issues/2839 is implemented.
 
