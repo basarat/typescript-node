@@ -7,6 +7,6 @@ var b = myotherlib.myotherfunc();
 console.log(typeof a.foo); // string
 console.log(typeof b.foo); // number
 
-myotherlib.bleh().then((x) => {
+myotherlib.myAsync().then((x) => {
 	console.log(x.foo); // 42
 });
